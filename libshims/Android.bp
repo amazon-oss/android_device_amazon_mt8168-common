@@ -18,3 +18,11 @@ cc_library_shared {
     compile_multilib: "32",
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libion_mtk_compat",
+    srcs: ["libion_mtk_compat/ion.c"],
+    shared_libs: ["liblog"],
+    compile_multilib: "32",
+    vendor: true,
+}
