@@ -3,6 +3,12 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+cc_library_headers {
+    name: "libshim_helper_headers",
+    export_include_dirs: ["include"],
+    vendor: true,
+}
+
 cc_library_shared {
     name: "libmtkcam_grallocutils",
     srcs: ["libmtkcam_grallocutils/GrallocHelper.cpp"],
