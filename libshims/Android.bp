@@ -32,3 +32,18 @@ cc_library_shared {
     compile_multilib: "32",
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libdpframework_compat",
+    srcs: [
+        "libdpframework_compat/DpBlitStream.c",
+        "libdpframework_compat/DpIspStream.c",
+        "libdpframework_compat/DpVEncStream.c",
+        "libdpframework_compat/lib.c",
+        "libdpframework_compat/thunks.S",
+    ],
+    header_libs: ["libshim_helper_headers"],
+    shared_libs: ["liblog"],
+    compile_multilib: "32",
+    vendor: true,
+}
