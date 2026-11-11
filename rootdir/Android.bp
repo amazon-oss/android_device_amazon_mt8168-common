@@ -1,0 +1,18 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "init.mt8168.rc",
+    src: "etc/init.mt8168.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt8168.usb.rc",
+    src: "etc/init.mt8168.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}

@@ -28,6 +28,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/ueventd.mt8168.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
+PRODUCT_PACKAGES += \
+    init.mt8168.rc \
+    init.mt8168.usb.rc
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
