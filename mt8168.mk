@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
     init.mt8168.rc \
     init.mt8168.usb.rc
 
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
