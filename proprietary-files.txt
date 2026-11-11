@@ -1,5 +1,8 @@
 # Unpinned blobs from Amazon/quartz/quartz:11/RS8338.3339N/0030132734720:user/amz-p,release-keys
 
+# Gatekeeper
+vendor/lib64/hw/gatekeeper.mt8168.so
+
 # TEE
 vendor/bin/kisd
 vendor/etc/init/kisd.rc
