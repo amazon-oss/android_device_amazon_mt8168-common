@@ -18,5 +18,11 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
+# Bootloader
+TARGET_NO_BOOTLOADER := true
+
+# Platform
+TARGET_BOARD_PLATFORM := mt8168
+
 # Inherit the proprietary files
 include vendor/amazon/mt8168-common/BoardConfigVendor.mk
