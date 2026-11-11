@@ -64,5 +64,8 @@ TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 # Verified Boot
 BOARD_AVB_ENABLE := false
 
+# VNDK
+BOARD_VNDK_VERSION := current
+
 # Inherit the proprietary files
 include vendor/amazon/mt8168-common/BoardConfigVendor.mk
