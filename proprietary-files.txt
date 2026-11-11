@@ -137,6 +137,9 @@ vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
+# Sensors
+vendor/etc/init/hw/init.sensor_1_0.rc:vendor/etc/init/init.sensor_1_0.rc
+
 # TEE
 vendor/bin/kisd
 vendor/etc/init/kisd.rc
