@@ -34,7 +34,8 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/amazon
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/amazon/mt8168-common/mt8168-common-vendor.mk)
