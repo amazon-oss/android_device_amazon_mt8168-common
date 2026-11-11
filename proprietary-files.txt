@@ -81,6 +81,15 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.4.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.5.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.6.so
 
+# DRM
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine
+vendor/bin/securetime
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
+vendor/etc/init/securetime.rc
+vendor/lib/liburee_meta_drmkeyinstall_v2.so
+vendor/lib/libwvhidl.so
+vendor/lib/mediadrm/libwvdrmengine.so
+
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mt8168.so
 

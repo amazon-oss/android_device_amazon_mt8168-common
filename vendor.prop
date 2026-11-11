@@ -5,6 +5,9 @@ ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.vendor.mtk_pq_color_mode=1
 ro.vendor.mtk_pq_support=2
 
+# DRM
+ro.vendor.mtk_in_house_tee_support=true
+
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.mtk_venc_inhouse_ready=1
