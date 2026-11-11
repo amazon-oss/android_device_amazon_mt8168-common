@@ -18,6 +18,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     mt8168_common
 
+# Dexpreopt
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    pm.dexopt.bg-dexopt=speed \
+    pm.dexopt.install=speed
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
