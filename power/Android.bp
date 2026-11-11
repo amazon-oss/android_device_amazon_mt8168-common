@@ -1,0 +1,16 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "libmtkpower_tap2wake",
+    srcs: ["Power.cpp"],
+    shared_libs: [
+        "android.hardware.power-ndk_platform",
+        "libbase",
+        "libbinder_ndk",
+    ],
+    compile_multilib: "64",
+    vendor: true,
+}

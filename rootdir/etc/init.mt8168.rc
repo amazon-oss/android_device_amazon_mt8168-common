@@ -98,6 +98,10 @@ on boot
     write /proc/sys/vm/dirty_writeback_centisecs 300
     chmod 0660 /sys/power/autosleep
 
+    # Touchscreen
+    chown system system /sys/touchscreen/link_input_dev/gesture_wakeup
+    chmod 0660 /sys/touchscreen/link_input_dev/gesture_wakeup
+
 on property:sys.boot_completed=1
     # Power
     write /sys/devices/system/cpu/eas/enable 2
