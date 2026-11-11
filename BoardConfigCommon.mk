@@ -57,5 +57,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Platform
 TARGET_BOARD_PLATFORM := mt8168
 
+# Verified Boot
+BOARD_AVB_ENABLE := false
+
 # Inherit the proprietary files
 include vendor/amazon/mt8168-common/BoardConfigVendor.mk
