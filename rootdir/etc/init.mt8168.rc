@@ -97,6 +97,12 @@ on post-fs-data
     # Thermal
     mkdir /data/vendor/.tp 0775 system system
 
+on early-boot
+    # Wi-Fi
+    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
+
 on boot
     # Display
     chown system system /sys/class/leds/lcd-backlight/brightness

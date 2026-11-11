@@ -73,5 +73,11 @@ BOARD_AVB_ENABLE := false
 # VNDK
 BOARD_VNDK_VERSION := current
 
+# Wi-Fi
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+
 # Inherit the proprietary files
 include vendor/amazon/mt8168-common/BoardConfigVendor.mk
