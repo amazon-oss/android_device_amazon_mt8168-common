@@ -76,6 +76,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
+    FrameworksResOverlayMT8168 \
     TetheringResOverlayMT8168
 
 # Permissions
