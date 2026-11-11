@@ -90,6 +90,13 @@ vendor/lib/liburee_meta_drmkeyinstall_v2.so
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
+# Fuel gauge
+vendor/bin/fuelgauged
+vendor/bin/fuelgauged_nvram
+vendor/etc/init/fuelgauged_init.rc
+vendor/etc/init/fuelgauged_nvram_init.rc
+vendor/lib/libfgauge_gm30.so
+
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mt8168.so
 
