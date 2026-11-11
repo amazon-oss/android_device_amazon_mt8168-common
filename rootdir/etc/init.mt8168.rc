@@ -123,6 +123,8 @@ on boot
     chown system system /sys/touchscreen/link_input_dev/gesture_wakeup
     chmod 0660 /sys/touchscreen/link_input_dev/gesture_wakeup
 
+    stop console
+
 on property:sys.boot_completed=1
     # Power
     write /sys/devices/system/cpu/eas/enable 2
