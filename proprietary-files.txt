@@ -143,3 +143,19 @@ vendor/etc/init/kisd.rc
 vendor/lib/libtz_uree.so
 vendor/lib64/libtz_uree.so
 vendor/lib64/liburee_meta_drmkeyinstall_v2.so
+
+# Thermal
+vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
+vendor/bin/thermal
+vendor/bin/thermal_manager
+vendor/bin/thermalloadalgod
+vendor/etc/.tp/.ht120.mtc
+vendor/etc/.tp/.thermal_policy_00
+vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
+vendor/etc/init/init.thermal.rc
+vendor/etc/init/init.thermal_manager.rc
+vendor/etc/init/init.thermalloadalgod.rc
+vendor/lib/libthermalalgo.so
+vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
+vendor/lib64/hw/thermal.mt8168.so
+vendor/lib64/libifcutils_mtk.so

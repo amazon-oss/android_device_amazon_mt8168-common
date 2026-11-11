@@ -89,6 +89,9 @@ on post-fs-data
     mkdir /mnt/vendor/nvdata/media 0771 media audio
     restorecon_recursive /mnt/vendor/nvdata
 
+    # Thermal
+    mkdir /data/vendor/.tp 0775 system system
+
 on boot
     # Display
     chown system system /sys/class/leds/lcd-backlight/brightness
