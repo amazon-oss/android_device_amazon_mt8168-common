@@ -1,3 +1,9 @@
+# Connsys
+persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.dynamic.dump=0
+persist.vendor.connsys.patch.version=-1
+vendor.connsys.driver.ready=no
+
 # Display
 ro.hardware.egl=mali
 ro.opengles.version=196610
@@ -17,3 +23,6 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 
 # USB
 ro.vendor.usb.vid=0x1949
+
+# Wi-Fi
+ro.vendor.wifi.sap.interface=ap0

@@ -1,5 +1,14 @@
 # Unpinned blobs from Amazon/quartz/quartz:11/RS8338.3339N/0030132734720:user/amz-p,release-keys
 
+# Connsys
+vendor/bin/wmt_launcher
+vendor/bin/wmt_loader
+vendor/firmware/WIFI_RAM_CODE_soc1_0_1a_1.bin
+vendor/firmware/soc1_0_patch_mcu_1a_1_hdr.bin
+vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin
+vendor/firmware/soc1_0_ram_mcu_1a_1_hdr.bin
+vendor/firmware/soc1_0_ram_wifi_1a_1_hdr.bin
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.5-service

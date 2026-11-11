@@ -104,6 +104,9 @@ on early-boot
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
 
 on boot
+    # Connsys
+    insmod /vendor/lib/modules/mt8168_common.ko
+
     # Display
     chown system system /sys/class/leds/lcd-backlight/brightness
     chmod 0664 /sys/class/leds/lcd-backlight/brightness
@@ -123,6 +126,13 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor schedutil
     write /proc/perfmgr/boost_ctrl/dram_ctrl/ddr 2
 
+on property:vendor.connsys.driver.ready=yes
+    # Wi-Fi
+    insmod /vendor/lib/modules/mt8168_wlan_adaptor.ko
+    insmod /vendor/lib/modules/mt8168_wlan.ko
+    wait /dev/wmtWifi
+    write /dev/wmtWifi "C"
+
 service vendor.media.omx /vendor/bin/hw/android.hardware.media.omx@1.0-service
     override
     class late_start
@@ -130,3 +140,14 @@ service vendor.media.omx /vendor/bin/hw/android.hardware.media.omx@1.0-service
     group camera drmrpc mediadrm media_rw sdcard_rw media system audio inet net_bt net_bt_admin net_bw_acct sdcard_r
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks
+
+service wmt_launcher /vendor/bin/wmt_launcher -p /vendor/firmware/ -o 1
+    class core
+    user system
+    group system
+
+service wmt_loader /vendor/bin/wmt_loader
+    class core
+    user system
+    group system
+    oneshot
