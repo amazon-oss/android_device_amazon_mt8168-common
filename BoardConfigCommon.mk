@@ -38,6 +38,9 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
+
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
