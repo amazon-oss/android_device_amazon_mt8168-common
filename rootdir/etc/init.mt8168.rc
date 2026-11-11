@@ -35,6 +35,10 @@ on fs
     swapon_all /vendor/etc/fstab.enableswap
 
 on post-fs-data
+    # Bluetooth
+    mkdir /data/vendor/bluetooth 0770 bluetooth bluetooth
+    start vendor.btmac
+
     # Display
     chmod 0666 /dev/mali0
     chmod 0444 /dev/m4u
@@ -127,11 +131,20 @@ on property:sys.boot_completed=1
     write /proc/perfmgr/boost_ctrl/dram_ctrl/ddr 2
 
 on property:vendor.connsys.driver.ready=yes
+    # Bluetooth
+    insmod /vendor/lib/modules/mt8168_bt.ko
+
     # Wi-Fi
     insmod /vendor/lib/modules/mt8168_wlan_adaptor.ko
     insmod /vendor/lib/modules/mt8168_wlan.ko
     wait /dev/wmtWifi
     write /dev/wmtWifi "C"
+
+service vendor.btmac /vendor/bin/init.btmac.sh
+    user bluetooth
+    group bluetooth
+    disabled
+    oneshot
 
 service vendor.media.omx /vendor/bin/hw/android.hardware.media.omx@1.0-service
     override

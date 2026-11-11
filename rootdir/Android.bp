@@ -9,6 +9,12 @@ prebuilt_etc {
     vendor: true,
 }
 
+sh_binary {
+    name: "init.btmac.sh",
+    src: "bin/init.btmac.sh",
+    vendor: true,
+}
+
 prebuilt_etc {
     name: "init.mt8168.rc",
     src: "etc/init.mt8168.rc",
