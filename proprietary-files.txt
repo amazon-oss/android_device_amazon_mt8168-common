@@ -1,0 +1,8 @@
+# Unpinned blobs from Amazon/quartz/quartz:11/RS8338.3339N/0030132734720:user/amz-p,release-keys
+
+# TEE
+vendor/bin/kisd
+vendor/etc/init/kisd.rc
+vendor/lib/libtz_uree.so
+vendor/lib64/libtz_uree.so
+vendor/lib64/liburee_meta_drmkeyinstall_v2.so
