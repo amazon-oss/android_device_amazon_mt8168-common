@@ -117,6 +117,26 @@ vendor/lib/vendor.mediatek.hardware.pq@2.3.so
 vendor/lib/vendor.mediatek.hardware.pq@2.4.so
 vendor/lib/vendor.mediatek.hardware.pq@2.5.so
 
+# Power
+vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
+vendor/etc/fstb.cfg
+vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
+vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
+vendor/etc/power_app_cfg.xml
+vendor/etc/powercontable.xml
+vendor/etc/powerscntbl.xml
+vendor/lib/libpowerhalwrap_vendor.so
+vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so
+vendor/lib/vendor.mediatek.hardware.mtkpower@1.1.so
+vendor/lib64/android.hardware.power-service-mediatek.so
+vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.1-impl.so
+vendor/lib64/libmtcloader.so
+vendor/lib64/libperfctl_vendor.so
+vendor/lib64/libpowerhal.so
+vendor/lib64/libpowerhalwrap_vendor.so
+vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
 # TEE
 vendor/bin/kisd
 vendor/etc/init/kisd.rc
