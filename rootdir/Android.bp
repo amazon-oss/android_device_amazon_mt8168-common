@@ -4,6 +4,12 @@
 //
 
 prebuilt_etc {
+    name: "fstab.enableswap",
+    src: "etc/fstab.enableswap",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.mt8168.rc",
     src: "etc/init.mt8168.rc",
     sub_dir: "init/hw",

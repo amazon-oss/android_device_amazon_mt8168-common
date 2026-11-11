@@ -22,6 +22,10 @@ on fs
     mkdir /mnt/vendor/nvcfg
     mount_all /vendor/etc/fstab.mt8168
 
+    # ZRAM
+    write /proc/sys/vm/page-cluster 0
+    swapon_all /vendor/etc/fstab.enableswap
+
 on post-fs-data
     # Display
     chmod 0666 /dev/mali0

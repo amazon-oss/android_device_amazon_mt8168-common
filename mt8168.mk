@@ -33,6 +33,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/ueventd.mt8168.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
 PRODUCT_PACKAGES += \
+    fstab.enableswap \
     init.mt8168.rc \
     init.mt8168.usb.rc
 
