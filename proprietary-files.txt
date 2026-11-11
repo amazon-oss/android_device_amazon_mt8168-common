@@ -84,6 +84,30 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.6.so
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mt8168.so
 
+# Media
+vendor/bin/vpud
+vendor/etc/init/vpud.rc
+vendor/etc/mtk_omx_core.cfg
+vendor/lib/libMtkOmxCore.so
+vendor/lib/libMtkOmxMp3Dec.so
+vendor/lib/libMtkOmxVdecEx.so
+vendor/lib/libMtkOmxVenc.so
+vendor/lib/lib_uree_mtk_video_secure_al.so
+vendor/lib/libmp4enc_sa.ca7.so
+vendor/lib/libmtcloader.so
+vendor/lib/libmtk_drvb.so
+vendor/lib/libstagefrighthw.so
+vendor/lib/libvc1dec_sa.ca7.so
+vendor/lib/libvcodec_oal.so
+vendor/lib/libvcodec_utility.so
+vendor/lib/libvcodecdrv.so
+vendor/lib/libvpud_vcodec.so
+vendor/lib/vendor.mediatek.hardware.pq@2.1.so
+vendor/lib/vendor.mediatek.hardware.pq@2.2.so
+vendor/lib/vendor.mediatek.hardware.pq@2.3.so
+vendor/lib/vendor.mediatek.hardware.pq@2.4.so
+vendor/lib/vendor.mediatek.hardware.pq@2.5.so
+
 # TEE
 vendor/bin/kisd
 vendor/etc/init/kisd.rc
